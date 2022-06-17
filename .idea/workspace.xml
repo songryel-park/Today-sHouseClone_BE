@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9db154f6-29e0-48fd-b920-f8ff9b439d18" name="Changes" comment="" />
+    <list default="true" id="9db154f6-29e0-48fd-b920-f8ff9b439d18" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,12 +58,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/PSR/Desktop/CODE/workspaceJ/TodaysHouse",
+    "last_opened_file_path": "C:/Users/PSR/Desktop/CODE/workspaceJ/Todays-House",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "39b63bb67b445b3ad4cf580162e0e1cd"
   }
 }]]></component>
   <component name="RunManager">
@@ -82,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655450469129</updated>
       <workItem from="1655450470277" duration="10244000" />
+      <workItem from="1655464397331" duration="35000" />
     </task>
     <servers />
   </component>
