@@ -17,14 +17,14 @@ public class PostController {
     private final PostService postService;
 
     @GetMapping("/posts")
-    public List<PostDto> getAllPost(@RequestHeader("Authorization") String user){
+    public ResponseEntity<PostResponseDto> getAllPost(@RequestHeader("Authorization") String user){
         return postService.getAllPost();
     }
 
-    @GetMapping("/posts/{id}")
-    public PostDto getPost(@PathVariable Long id) {
+    @GetMapping("/post/{id}")
+    public PostResponseDto getPost(@PathVariable Long id) {
         Post post = postService.getPost(id).orElseThrow(
                 () -> new IllegalArgumentException("게시물이 존재하지 않습니다."));
-        return PostDto.from(post);
+        return PostResponseDto.from(post);
     }
 }
