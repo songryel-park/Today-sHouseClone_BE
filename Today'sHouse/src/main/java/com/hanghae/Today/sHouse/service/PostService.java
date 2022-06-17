@@ -24,14 +24,14 @@ public class PostService extends Timestamped {
     private final UserRepository userRepository;
     private final PostRepository postRepository;
 
-    public List<PostDto> getAllPost() {
+    public ResponseEntity<PostResponseDto> getAllPost() {
         List<Post> posts = postRepository.findAllByOrderByCreatedAtDesc();
-        List<PostDto> postDtos = new ArrayList<>();
+        List<PostResponseDto> postResponse = new ArrayList<>();
         for (Post post : posts) {
-            PostDto postDto = PostDto.builder().build();
-            postDtos.add(postDto);
+            PostResponseDto postDto = PostResponseDto.builder().build();
+            postResponse.add(postDto);
         }
-        return postDtos;
+        return new ResponseEntity(postResponse, HttpStatus.OK);
     }
 
     public Optional<Post> getPost(Long id) {
